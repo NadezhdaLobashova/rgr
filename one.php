@@ -1,12 +1,13 @@
-<html>
+п»ї<html>
 <head>
+<meta charset="UTF-8"> 
 </head>
 <body>
 <?php
 	$flats = [
-		'Однокомнатные' => [
+		'РћРґРЅРѕРєРѕРјРЅР°С‚РЅС‹Рµ' => [
 			[
-				'address' => 'Вилюйская, 5',
+				'address' => 'Р’РёР»СЋР№СЃРєР°СЏ, 5',
 				'cost' => 2190000,
 				'areaTotal' => 47,
 				'areaLive' => 15,
@@ -17,7 +18,7 @@
 				]
 			],
 			[
-				'address' => 'Дуси Ковальчук, 238',
+				'address' => 'Р”СѓСЃРё РљРѕРІР°Р»СЊС‡СѓРє, 238',
 				'cost' => 2750000,
 				'areaTotal' => 40,
 				'areaLive' => 15,
@@ -28,7 +29,7 @@
 				]
 			],
 			[
-				'address' => 'Зорге, 229\3',
+				'address' => 'Р—РѕСЂРіРµ, 229\3',
 				'cost' => 960000,
 				'areaTotal' => 31,
 				'areaLive' => 18,
@@ -37,9 +38,9 @@
 				]
 			]
 		],
-		'Двухкомнатные' => [
+		'Р”РІСѓС…РєРѕРјРЅР°С‚РЅС‹Рµ' => [
 			[
-				'address' => 'Забалуева, 84',
+				'address' => 'Р—Р°Р±Р°Р»СѓРµРІР°, 84',
 				'cost' => 1385000,
 				'areaTotal' => 41,
 				'areaLive' => 23,
@@ -48,7 +49,7 @@
 				]
 			],
 			[
-				'address' => 'Петухова, 156',
+				'address' => 'РџРµС‚СѓС…РѕРІР°, 156',
 				'cost' => 2670000,
 				'areaTotal' => 56,
 				'areaLive' => 25,
@@ -67,19 +68,19 @@
 			<div class="flat">
 				<div class="dateItem"> <?php
 					if (isset($date['address'])) {
-						echo " <div class='date'> Адрес: </div> <div class='value'>" .$date['address']."</div>" ;
+						echo " <div class='date'> РђРґСЂРµСЃ: </div> <div class='value'>" .$date['address']."</div>" ;
 					}
 					if (isset($date['cost'])) {
-						echo " <div class='date'> Цена: </div> <div class='value'>" .number_format($date['cost'], 0, ',', ' ')." руб.</div>" ;
+						echo " <div class='date'> Р¦РµРЅР°: </div> <div class='value'>" .number_format($date['cost'], 0, ',', ' ')." СЂСѓР±.</div>" ;
 					}
 					if (isset($date['areaTotal'])) {
-						echo " <div class='date'> Общая площадь: </div> <div class='value'>" .htmlspecialchars($date['areaTotal'])." м^2.</div>" ;
+						echo " <div class='date'> РћР±С‰Р°СЏ РїР»РѕС‰Р°РґСЊ: </div> <div class='value'>" .htmlspecialchars($date['areaTotal'])." Рј^2.</div>" ;
 					}
 					if (isset($date['areaLive'])) {
-						echo " <div class='date'> Жилая площадь : </div> <div class='value'>" .htmlspecialchars($date['areaLive'])." м^2.</div>" ;
+						echo " <div class='date'> Р–РёР»Р°СЏ РїР»РѕС‰Р°РґСЊ : </div> <div class='value'>" .htmlspecialchars($date['areaLive'])." Рј^2.</div>" ;
 					}
 					if (isset($date['areaKitchen'])) {
-						echo " <div class='date'> Площадь кухни: </div> <div class='value'>" .htmlspecialchars($date['areaKitchen'])." м^2.</div>"; 
+						echo " <div class='date'> РџР»РѕС‰Р°РґСЊ РєСѓС…РЅРё: </div> <div class='value'>" .htmlspecialchars($date['areaKitchen'])." Рј^2.</div>"; 
 					} ?>
 				</div>	
 				<div class="photos"> <?php
