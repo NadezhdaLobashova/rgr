@@ -74,13 +74,13 @@
 						echo " <div class='date'> Цена: </div> <div class='value'>" .number_format($date['cost'], 0, ',', ' ')." руб.</div>" ;
 					}
 					if (isset($date['areaTotal'])) {
-						echo " <div class='date'> Общая площадь: </div> <div class='value'>" .htmlspecialchars($date['areaTotal'])." м^2.</div>" ;
+						echo " <div class='date'> Общая площадь: </div> <div class='value'>" .htmlspecialchars($date['areaTotal'])." м<sup>2</sup>.</div>" ;
 					}
 					if (isset($date['areaLive'])) {
-						echo " <div class='date'> Жилая площадь : </div> <div class='value'>" .htmlspecialchars($date['areaLive'])." м^2.</div>" ;
+						echo " <div class='date'> Жилая площадь : </div> <div class='value'>" .htmlspecialchars($date['areaLive'])." м<sup>2</sup>.</div>" ;
 					}
 					if (isset($date['areaKitchen'])) {
-						echo " <div class='date'> Площадь кухни: </div> <div class='value'>" .htmlspecialchars($date['areaKitchen'])." м^2.</div>"; 
+						echo " <div class='date'> Площадь кухни: </div> <div class='value'>" .htmlspecialchars($date['areaKitchen'])." м<sup>2</sup>.</div>"; 
 					} ?>
 				</div>	
 				<div class="photos"> <?php
